@@ -43,7 +43,7 @@ const Section5 = () => {
   ];
 
   return (
-    <section className="mt-10 flex justify-evenly items-center m-auto w-full flex-wrap py-20 gap-6">
+    <section className="mt-0 md:mt-10 flex justify-evenly items-center m-auto w-full flex-wrap pb-16 pt-8 md:py-20 gap-6">
       {features.map((feature) => (
         <FeatureCard
           key={feature.id}

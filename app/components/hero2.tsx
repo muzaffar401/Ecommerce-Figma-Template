@@ -5,7 +5,7 @@ import HeroTimer from './heroTimer'
 
 const Hero2 = () => {
     return (
-        <div className="flex imagebg flex-col lg:flex-row items-center justify-between w-full  h-full px-4 sm:px-8 lg:px-[50px]  font-inter bg-gradient-to-br from-[#211c24] to-[#39303d] text-white mt-20">
+        <div className="flex imagebg flex-col lg:flex-row items-center justify-between w-full  h-full px-4 sm:px-8 lg:px-[50px]  font-inter bg-gradient-to-br from-[#211c24] to-[#39303d] text-white mt-10">
             {/* Text Content */}
             <div className="flex flex-col gap-5 py-20">
                 <span className="text-[#00FF66] font-medium">Categories</span>
