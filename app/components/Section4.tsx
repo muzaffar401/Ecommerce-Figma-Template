@@ -27,7 +27,7 @@ const Section4 = () => {
             button: 'Shop Now',
             imageSrc: '/img7.webp',
             bgColor: 'bg-[#303030]',
-            colSpan: 'col-span-1 row-span-1',
+            colSpan: 'xl:col-span-1 row-span-1 col-span-2',
         },
         {
             id: 4,
@@ -36,38 +36,40 @@ const Section4 = () => {
             button: 'Shop Now',
             imageSrc: '/img8.webp',
             bgColor: 'bg-[#303030]',
-            colSpan: 'col-span-1 row-span-1',
+            colSpan: 'col-span-2 row-span-2 xl:col-span-1 xl:row-span-1',
         },
     ];
 
     return (
         <>
             <div className="space-y-2 ml-2 md:ml-0 mt-10">
-                <div className="text-brandPrimary flex gap-2 text-lg  font-bold items-center">
+                <div className="text-brandPrimary flex gap-2 text-lg font-bold items-center">
                     <div className="h-10 w-5 bg-brandPrimary rounded" />
                     Featured
                 </div>
-                <h1 className="text-4xl font-semibold">New Arrival</h1>
+                <h1 className="text-2xl md:text-4xl font-semibold">New Arrival</h1>
             </div>
-            <section className="md:grid grid-cols-4 grid-rows-2 w-full md:h-[700px] xl:gap-6 sm:gap-4 gap-3 py-10 text-[#FAFAFA]">
+            <section className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 w-full py-10 text-[#FAFAFA]">
                 {items.map((item) => (
                     <div
                         key={item.id}
-                        className={`${item.colSpan} ${item.bgColor} relative md:w-full md:h-full w-full h-96`}
+                        className={`relative w-full h-72 md:h-full ${item.bgColor} ${item.colSpan}`}
                     >
                         {item.title && (
-                            <div className="h-full w-full z-[1] flex flex-col gap-2 justify-end absolute bottom-10 sm:left-10 left-3">
-                                <h1 className="text-3xl font-medium">{item.title}</h1>
-                                <span className="text-sm">{item.description}</span>
+                            <div className="absolute bottom-5 sm:bottom-10 left-3 sm:left-10 z-10 flex flex-col gap-2">
+                                <h1 className="text-lg sm:text-3xl font-medium">{item.title}</h1>
+                                <span className="text-xs sm:text-sm">{item.description}</span>
                                 {item.button && (
-                                    <span className="border-b font-medium w-fit">{item.button}</span>
+                                    <span className="border-b font-medium text-xs sm:text-sm w-fit">
+                                        {item.button}
+                                    </span>
                                 )}
                             </div>
                         )}
                         <img
                             alt={item.title || 'Decorative image'}
                             loading="lazy"
-                            className="w-full h-full lg:object-cover object-contain"
+                            className="w-full h-full object-contain md:object-cover"
                             src={item.imageSrc}
                         />
                     </div>
