@@ -52,7 +52,7 @@ const hero: React.FC = () => {
                                     <img
                                         src={img}
                                         alt={`Slide ${idx + 1}`}
-                                        className="w-full xl:h-[352px] object-cover"
+                                        className="w-full xl:h-[352px] h-full object-cover"
                                     />
                                 </div>
                             ))}

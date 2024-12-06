@@ -25,7 +25,7 @@ export function ProductCard({
   isNew
 }: ProductCardProps) {
   return (
-    <Card className="group relative overflow-hidden">
+    <Card className="group relative overflow-hidden w-52 mx-auto sm:w-full">
       <CardContent className="p-0">
         <div className="relative aspect-square">
           {discount && (

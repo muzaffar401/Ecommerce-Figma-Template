@@ -13,7 +13,7 @@ const SectionHeader = ({
         <div className="h-10 w-5 bg-brandPrimary rounded" />
         {subHeading}
       </div>
-      <h1 className="text-4xl font-semibold">{heading}</h1>
+      <h1 className="text-3xl md:text-4xl font-semibold">{heading}</h1>
     </div>
   );
 };

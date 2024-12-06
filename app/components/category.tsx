@@ -18,8 +18,8 @@ const Category = () => {
             Categories
           </div>
           <div className="flex justify-between items-center pr-4">
-            <h1 className="text-4xl font-semibold">Browse By Category</h1>
-            <div className="flex gap-2 items-center">
+            <h1 className="text-3xl md:text-4xl font-semibold">Browse By Category</h1>
+            <div className="md:flex gap-2 items-center hidden">
               <Button variant={"outline"} size={"icon"} className="rounded-full sm:w-8 sm:h-8">
                 <FaArrowLeft />
               </Button>

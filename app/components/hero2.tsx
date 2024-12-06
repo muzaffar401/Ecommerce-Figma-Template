@@ -9,7 +9,7 @@ const Hero2 = () => {
             {/* Text Content */}
             <div className="flex flex-col gap-5 py-20">
                 <span className="text-[#00FF66] font-medium">Categories</span>
-                <h1 className="md:text-6xl text-5xl text-white">Enhance Your<br /> Music Experience</h1>
+                <h1 className="sm:text-6xl text-4xl text-white">Enhance Your<br /> Music Experience</h1>
                 <HeroTimer />
                 <button className="px-8 py-3 text-2xl bg-[#00FF66] m-auto xl:m-0 text-white rounded-sm w-fit xs:mt-0 mt-8">Buy Now</button>
 

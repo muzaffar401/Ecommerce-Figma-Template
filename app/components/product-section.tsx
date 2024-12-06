@@ -46,7 +46,7 @@ const ProductSection = ({
         <ProductsCollection products={products} isCarousel={isCarousel} />
       </div>
       {/* CTA */}
-      <Button className="bg-brandPrimary text-white w-fit rounded-none mx-auto mt-4 text-[16px] py-[22px] px-[48px]">{ctaText}</Button>
+      <Button className="bg-brandPrimary text-white w-fit rounded-none mx-auto mt-4 text-[12px] py-[16px] px-[32px] sm:text-[16px] sm:py-[22px] sm:px-[48px]">{ctaText}</Button>
     </div>
   );
 };

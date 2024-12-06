@@ -17,10 +17,10 @@ const Footer = () => {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="bg-black text-white p-2 flex-grow outline-none rounded-lg"
+                                className="bg-black text-white p-2 flex-grow outline-none rounded-lg relative"
                                 aria-label="Enter your email"
                             />
-                            <button type="submit" className="p-2" aria-label="Subscribe">
+                            <button type="submit" className="p-2 absolute right-16 xl:relative xl:right-0" aria-label="Subscribe">
                                 <LuSendHorizontal />
                             </button>
                         </form>

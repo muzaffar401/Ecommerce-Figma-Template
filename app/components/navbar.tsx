@@ -14,7 +14,7 @@ const navbar: React.FC = () => {
             {/* Logo */}
             <div className="logo text-2xl font-bold">Exclusive</div>
 
-          
+
             {/* Icons */}
             <div className="icons flex items-center space-x-4 order-last">
                 <svg
@@ -59,38 +59,60 @@ const navbar: React.FC = () => {
 
             {/* Navigation Links */}
             <nav
-                className={`${
-                    menuOpen ? "block" : "hidden"
-                } w-full md:flex md:space-x-8 md:w-auto bg-white absolute md:static top-14 left-0 md:top-auto shadow-md md:shadow-none z-10`}
+                className={`${menuOpen ? "block" : "hidden"
+                    } w-full md:flex md:space-x-8 md:w-auto bg-white absolute md:static top-14 left-0 md:top-auto shadow-md md:shadow-none z-10`}
             >
                 <a
                     href="#"
-                    className="block md:inline-block text-lg py-2 px-2 md:py-0 hover:underline"
+                    className="block md:inline-block text-lg py-2 px-4 md:py-0 hover:underline"
                 >
                     Home
                 </a>
                 <a
                     href="#"
-                    className="block md:inline-block text-lg py-2 px-2 md:py-0 hover:underline"
+                    className="block md:inline-block text-lg py-2 px-4 md:py-0 hover:underline"
                 >
                     Contact
                 </a>
                 <a
                     href="#"
-                    className="block md:inline-block text-lg py-2 px-2 md:py-0 hover:underline"
+                    className="block md:inline-block text-lg py-2 px-4 md:py-0 hover:underline"
                 >
                     About
                 </a>
                 <a
                     href="#"
-                    className="block md:inline-block text-lg py-2 px-2 md:py-0 hover:underline"
+                    className="block md:inline-block text-lg py-2 px-4 md:py-0 hover:underline"
                 >
                     Sign Up
                 </a>
+
+                <div className="relative my-3">
+                    <input
+                        type="text"
+                        placeholder="What are you looking for?"
+                        className="border border-gray-200 rounded-md pl-4 pr-12 py-2 text-sm w-[300px] max-w-[400px] bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 placeholder-gray-500"
+                    />
+                    <svg
+                        width="24"
+                        className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M20 20L16.2223 16.2156M18.3158 11.1579C18.3158 13.0563 17.5617 14.8769 16.2193 16.2193C14.8769 17.5617 13.0563 18.3158 11.1579 18.3158C9.2595 18.3158 7.43886 17.5617 6.0965 16.2193C4.75413 14.8769 4 13.0563 4 11.1579C4 9.2595 4.75413 7.43886 6.0965 6.0965C7.43886 4.75413 9.2595 4 11.1579 4C13.0563 4 14.8769 4.75413 16.2193 6.0965C17.5617 7.43886 18.3158 9.2595 18.3158 11.1579V11.1579Z"
+                            stroke="#000000"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                        ></path>
+                    </svg>
+                </div>
             </nav>
 
-              {/* Search Bar */}
-              <div className="relative hidden lg:block">
+            {/* Search Bar */}
+            <div className="relative hidden lg:block">
                 <input
                     type="text"
                     placeholder="What are you looking for?"
